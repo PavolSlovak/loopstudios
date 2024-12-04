@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Tapestry&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="input.css" />
+    <title>Loop Studios</title>
+  </head>
+  <body>
+    <!-- Navbar / Hero container  -->
+    <section id="hero-section" class="relative p-10 mx-auto mb-24">
+      <!-- Logo & Desktop menu / Hamburger button  -->
+      <div class="flex justify-between">
+        <img src="./images/logo.svg" alt="loopstudios logo" />
+
+        <div id="desktop-menu" class="hidden space-x-5">
+          <!-- Menu Item #1 -->
+          <div class="group">
+            <a href="#" class="text-white">About</a>
+            <div class="menu-item-underline"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="text-white">Careers</a>
+            <div class="menu-item-underline"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="text-white">Events</a>
+            <div class="menu-item-underline"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="text-white">Products</a>
+            <div class="menu-item-underline"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="text-white">Support</a>
+            <div class="menu-item-underline"></div>
+          </div>
+        </div>
+
+        <!-- Hamburger button -->
+        <button id="menu-btn" class="hamburger z-10" aria-label="Toggle menu">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+
+        <!-- Mobile menu container -->
+        <div
+          id="menu"
+          class="hidden absolute top-0 left-0 w-full h-full bg-black"
+        >
+          <div class="flex flex-col p-20 space-y-5">
+            <a href="#" class="text-white uppercase hover:text-pink-500"
+              >About</a
+            >
+            <a href="#" class="text-white uppercase hover:text-pink-500"
+              >Careers</a
+            >
+            <a href="#" class="text-white uppercase hover:text-pink-500"
+              >Events</a
+            >
+            <a href="#" class="text-white uppercase hover:text-pink-500"
+              >Products</a
+            >
+            <a href="#" class="text-white uppercase hover:text-pink-500"
+              >Support</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="p-5 my-20 border border-white md:w-[500px]">
+        <p class="uppercase text-3xl md:text-4xl text-white">
+          Impressive experience that deliver
+        </p>
+      </div>
+    </section>
+    <!-- VR container -->
+    <section id="vr-section">
+      <div class="relative flex flex-col mx-auto max-w-5xl px-5 md:px-0 my-20">
+        <img
+          class="max-w-3xl"
+          src="./images/desktop/image-interactive.jpg"
+          alt="image-interactive"
+        />
+        <div
+          class="md:absolute md:bottom-0 md:right-0 md md:w-[600px] bg-white p-16"
+        >
+          <h2 class="md:text-left">The leader in interactive VR</h2>
+          <p class="text-center md:text-left leading-8">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Creations container -->
+    <section id="creations-section">
+      <div class="relative flex flex-col mx-auto max-w-5xl px-5 md:px-0 mb-24">
+        <h2 class="md:text-left">Our creations</h2>
+        <!-- Creations container -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+          <!-- Creation card #1 -->
+          <div class="relative flex flex-col h-30 group overflow-hidden">
+            <!-- Creation gradient -->
+            <div class="creation-gradient"></div>
+
+            <!-- Mobile Image -->
+            <img
+              class="md:hidden w-full"
+              src="./images/mobile/image-deep-earth.jpg"
+              alt="deep-earth image"
+            />
+            <!-- Desktop Image -->
+            <img
+              class="hidden md:block group-hover:scale-110 duration-200"
+              src="./images/desktop/image-deep-earth.jpg"
+              alt="deep earth image"
+            />
+            <h5 class="creation-heading">Deep earth</h5>
+          </div>
+          <!-- Creation card #2 -->
+          <div class="relative flex flex-col h-30 group overflow-hidden">
+            <!-- Container gradient -->
+            <div class="creation-gradient"></div>
+
+            <!-- <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/90"></div>
+ -->
+            <!-- Mobile Image -->
+            <img
+              class="md:hidden w-full"
+              src="./images/mobile/image-curiosity.jpg"
+              alt="The curiosity mobile image"
+            />
+            <!-- Desktop Image -->
+            <img
+              class="hidden md:block group-hover:scale-110 duration-200"
+              src="./images/desktop/image-curiosity.jpg"
+              alt="The curiosity desktop image"
+            />
+            <h5 class="creation-heading">The curiosity</h5>
+          </div>
+          <!-- Creation card #3 -->
+          <div class="relative flex flex-col h-30 group overflow-hidden">
+            <!-- Container gradient -->
+            <div class="creation-gradient"></div>
+
+            <!-- Mobile Image -->
+            <img
+              class="md:hidden w-full"
+              src="./images/mobile/image-fisheye.jpg"
+              alt="Fish eye image mobile image"
+            />
+            <!-- Desktop Image -->
+            <img
+              class="hidden md:block group-hover:scale-110 duration-200"
+              src="./images/desktop/image-fisheye.jpg"
+              alt="Fish eye image desktop image"
+            />
+            <h5 class="creation-heading">Make it fisheye</h5>
+          </div>
+          <!-- Creation card #4 -->
+          <div class="relative flex flex-col h-30 group overflow-hidden">
+            <!-- Container gradient -->
+            <div class="creation-gradient"></div>
+
+            <!-- Mobile Image -->
+            <img
+              class="md:hidden w-full"
+              src="./images/mobile/image-from-above.jpg"
+              alt="From up above mobile image"
+            />
+            <!-- Desktop Image -->
+            <img
+              class="hidden md:block group-hover:scale-110 duration-200"
+              src="./images/desktop/image-from-above.jpg"
+              alt="From up above desktop image"
+            />
+            <h5 class="creation-heading">From up above</h5>
+          </div>
+          <!-- Creation card #5 -->
+          <div class="relative flex flex-col h-30 group overflow-hidden">
+            <!-- Container gradient -->
+            <div class="creation-gradient"></div>
+
+            <!-- Mobile Image -->
+            <img
+              class="md:hidden w-full"
+              src="./images/mobile/image-grid.jpg"
+              alt="The Grid mobile image"
+            />
+            <!-- Desktop Image -->
+            <img
+              class="hidden md:block group-hover:scale-110 duration-200"
+              src="./images/desktop/image-grid.jpg"
+              alt="The Grid desktop image"
+            />
+            <h5 class="creation-heading">The Grid</h5>
+          </div>
+          <!-- Creation card #6 -->
+          <div class="relative flex flex-col h-30 group overflow-hidden">
+            <!-- Container gradient -->
+            <div class="creation-gradient"></div>
+
+            <!-- Mobile Image -->
+            <img
+              class="md:hidden w-full"
+              src="./images/mobile/image-night-arcade.jpg"
+              alt="Night arcade mobile image"
+            />
+            <!-- Desktop Image -->
+            <img
+              class="hidden md:block group-hover:scale-110 duration-200"
+              src="./images/desktop/image-night-arcade.jpg"
+              alt="Night arcade desktop image"
+            />
+            <h5 class="creation-heading">Night arcade</h5>
+          </div>
+          <!-- Creation card #7 -->
+          <div class="relative flex flex-col h-30 group overflow-hidden">
+            <!-- Container gradient -->
+            <div class="creation-gradient"></div>
+
+            <!-- Mobile Image -->
+            <img
+              class="md:hidden w-full"
+              src="./images/mobile/image-pocket-borealis.jpg"
+              alt="Pocket borealis mobile image"
+            />
+            <!-- Desktop Image -->
+            <img
+              class="hidden md:block group-hover:scale-110 duration-200"
+              src="./images/desktop/image-pocket-borealis.jpg"
+              alt="Pocket borealis desktop image"
+            />
+            <h5 class="creation-heading">Pocket borealis</h5>
+          </div>
+          <!-- Creation card #8 -->
+          <div class="relative flex flex-col h-30 group overflow-hidden">
+            <!-- Container gradient -->
+            <div class="creation-gradient"></div>
+
+            <!-- Mobile Image -->
+            <img
+              class="md:hidden w-full"
+              src="./images/mobile/image-soccer-team.jpg"
+              alt="Soccer team mobile image"
+            />
+            <!-- Desktop Image -->
+            <img
+              class="hidden md:block group-hover:scale-110 duration-200"
+              src="./images/desktop/image-soccer-team.jpg"
+              alt="Soccer team desktop image"
+            />
+            <h5
+              class="absolute bottom-7 left-5 text-xl uppercase group-hover:text-black text-white z-50 group-hover:scale-110 duration-200"
+            >
+              The soccer team
+            </h5>
+          </div>
+        </div>
+
+        <button
+          class="md:absolute md:right-0 md:top-0 md:justify-end md:mx-0 mt-8 md:mt-0 md:px-6 md:py-2 border border-black uppercase hover:bg-black hover:text-white tracking-widest"
+        >
+          See all
+        </button>
+      </div>
+    </section>
+    <footer>
+      <div
+        class="flex flex-col md:flex-row items-center md:justify-between space-y-4 md:space-y-0 pb-20 pt-10 px-5 bg-black"
+      >
+        <!-- Footer Menu -->
+        <div class="flex flex-col md:flex-row space-y-3">
+          <div class="flex flex-col space-y-3 items-center md:items-start">
+            <!-- Logo -->
+            <img class="w-40" src="./images/logo.svg" alt="Loopstudio logo" />
+            <!-- Menu container -->
+            <div class="flex flex-col md:flex-row md:space-x-2 items-center">
+              <div class="group">
+                <a href="#" class="text-white">About</a>
+                <div class="menu-item-underline"></div>
+              </div>
+              <div class="group">
+                <a href="#" class="text-white">Careers</a>
+                <div class="menu-item-underline"></div>
+              </div>
+              <div class="group">
+                <a href="#" class="text-white">Events</a>
+                <div class="menu-item-underline"></div>
+              </div>
+              <div class="group">
+                <a href="#" class="text-white">Products</a>
+                <div class="menu-item-underline"></div>
+              </div>
+              <div class="group">
+                <a href="#" class="text-white">Support</a>
+                <div class="menu-item-underline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media icons  and Copyright container-->
+        <div class="flex flex-col items-center md:items-start space-y-4">
+          <!-- Social Media icons container -->
+          <div class="flex flex-row space-x-3">
+            <img src="./images/icon-facebook.svg" alt="Facebook" />
+            <img src="./images/icon-twitter.svg" alt="Twitter" />
+            <img src="./images/icon-pinterest.svg" alt="Pinterest" />
+            <img src="./images/icon-instagram.svg" alt="Instagram" />
+          </div>
+          <!-- Copyright  -->
+          <p class="text-slate-400 text-sm">
+            &reg; 2024 Loopstudios, All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

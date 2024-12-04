@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply uppercase text-3xl md:text-4xl mb-10 text-center font-thin;
+  }
+}
+.creation-heading {
+  @apply absolute bottom-7 left-5 text-xl uppercase group-hover:text-black text-white z-50 group-hover:scale-110 duration-200;
+}
+.creation-gradient {
+  @apply absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-transparent group-hover:to-white group-hover:opacity-90 z-10;
+}
+.section-container {
+  @apply relative p-10 mx-auto mb-24;
+}
+.menu-item-underline {
+  @apply h-0.5 bg-white w-9 mx-2 opacity-0 group-hover:opacity-100 duration-200;
+}
+
+#hero-section {
+  background-image: url("./images/mobile/image-hero.jpg");
+  repeat: no-repeat;
+  background-size: cover;
+}
+
+#menu-btn span {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+@media (min-width: 768px) {
+  #hero {
+    background-image: url("./images/desktop/image-hero.jpg");
+    repeat: no-repeat;
+    background-size: cover;
+  }
+  #menu-btn {
+    display: none;
+  }
+  #desktop-menu {
+    display: flex;
+  }
+}
